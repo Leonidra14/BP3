@@ -2,12 +2,17 @@
 @rendermode InteractiveServer
 
 <PageTitle>Counter</PageTitle>
+<style>
+    body {
+        background-color: #B8EBF1;
+    }
+</style>
 
-<h1>Counter</h1>
+<h1 style=" font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;">Counter</h1>
 
-<p role="status">Current count: @currentCount</p>
+<p role="status" style=" font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;">Current count: @currentCount</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button style="background-color:#1DB8CD; border-color:#1DB8CD" class="btn btn-primary" @onclick="IncrementCount ">Click me</button>
 
 @code {
     private int currentCount = 0;
